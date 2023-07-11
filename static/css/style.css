@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.terminal {
+    background-color: black;
+    color: green;
+    width: 97vw;
+    height: 100px;
+    padding: 1vw;
+    border: 0.5vw double green;
+}
+
+dialog {
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    margin-top: 30px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: rgb(164, 214, 164);
+}
+
+button {
+    color: white;
+    background-color: rgb(78, 128, 78);
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 5px;
+    margin: 5px;
+    /* float: right; */
+}
+
+#waiting,
+#waiting2 {
+    width: 300px;
+}
+#waiting{
+    z-index: 2;
+}
+#window{
+    width: 300px;
+}
+
+#timeForMove {
+    font-size: larger;
+    text-align: center;
+    position: fixed;
+    top: 150px;
+    left: -70vw;
+}
+
+#win, #loose{
+    padding: 20px;
+    font-size: x-large;
+}
+
+.loading-image {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    /* margin-left: 125px; */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="libs/tween.umd.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.0/socket.io.js"></script>
+    <script defer src="js/three145.js"></script>
+    <script defer src="js/Game.js"></script>
+    <script defer src="js/Net.js"></script>
+    <script defer src="js/Ui.js"></script>
+    <script defer src="js/Main.js"></script>
+</head>
+
+<body>
+    <div style="position: fixed;">
+        <div id="terminal" class="terminal">
+            Status
+        </div>
+        <dialog open id="window">
+            Podaj Nazwe Uzytkownika
+            <br><input id="user">
+            <br>
+            <button id="reset">Reset</button>
+            <button id="send">Loguj</button>
+        </dialog>
+
+        <dialog id="waiting">
+            Oczekiwanie na drugiego gracza
+            <br><img src="/gfx/loading.gif" class="loading-image">
+        </dialog>
+
+        <dialog id="waiting2">
+            Ruch przeciwnika
+            <br><img src="/gfx/loading.gif" class="loading-image">
+        </dialog>
+        <dialog id="timeForMove">
+            Pozostały czas na ruch
+            <div id="time"></div>
+        </dialog>
+        <dialog id="win">
+            Wygrałeś!
+        </dialog>
+        <dialog id="loose">
+            Przegrana
+        </dialog>
+    </div>
+
+    <div id="root"></div>
+</body>
+
+</html>
